@@ -19,7 +19,7 @@
 
 #include "emd.h"
 
-#define DEBUG_LEVEL 0
+#define DEBUG_LEVEL 3
 /*
  DEBUG_LEVEL:
    0 = NO MESSAGES
@@ -48,8 +48,6 @@ typedef struct node2_t {
   struct node2_t *NextC;               /* NEXT COLUMN */
   struct node2_t *NextR;               /* NEXT ROW */
 } node2_t;
-
-
 
 /* GLOBAL VARIABLE DECLARATION */
 static int _n1, _n2;                          /* SIGNATURES SIZES */

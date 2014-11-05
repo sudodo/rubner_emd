@@ -32,7 +32,8 @@ float dist2(feature_t *F1, feature_t *F2)
 int main()
 {
   int i;
-  int dimension = 500;
+  int dimension = 100;
+  int j ;
   int orig_signature = 1;
   /*
    feature_t   f1[4] = { {100,40}, {211,20}, {32,190}, {2,100} },
@@ -62,5 +63,6 @@ int main()
   e = emd(&s1, &s2, dist2, 0, 0);
 
   printf("emd=%f\n", e);
+  printf("dimension=%d\n", dimension);
 }
 
